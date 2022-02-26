@@ -91,6 +91,13 @@ export default function CardsContainer(props) {
     if (firstClickRef.current && secondClickRef.current) {
       if (
         firstClickRef.current[0] === secondClickRef.current[0] &&
+        firstClickRef.current[1] === secondClickRef.current[1]
+      ) {
+        //esta clicando no mesmo card
+        firstClickRef.current = null;
+        secondClickRef.current = null;
+      } else if (
+        firstClickRef.current[0] === secondClickRef.current[0] &&
         firstClickRef.current[1] !== secondClickRef.current[1]
       ) {
         let number = firstClickRef.current[0];

@@ -51,6 +51,7 @@ div#__next {
 html {
   min-height: 100vh;
   height: -webkit-fill-available;
+  -webkit-tap-highlight-color: transparent
 }
 
 body {
