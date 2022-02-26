@@ -1,0 +1,65 @@
+.container_win {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(14, 16, 21, 0.8);
+    z-index: 4;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+}
+
+.title_win {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.text_win,
+.button_win {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+.text_win {
+    line-height: 26px;
+
+}
+
+.button_win {
+    padding: 10px 80px;
+    background-color: var(--wine-color);
+    border: 1px solid var(--yellow-orange-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.modal {
+    background-color: var(--dark-color);
+    width: 400px;
+    padding: 24px 40px;
+
+    text-align: center;
+    position: relative;
+
+}
+
+.modal_container_web {
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+}
+
+@media(max-width:445px) {
+    .modal {
+        width: 90vw;
+    }
+}

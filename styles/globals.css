@@ -1,16 +1,103 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans.ttf");
+}
+
+@font-face {
+  font-family: "October Crow";
+  src: url("/fonts/October Crow.ttf");
+}
+
+/*##RESET*/
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+
+
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+img {
+  height: auto;
+}
+
+button,
+input,
+textarea {
+  border: 0;
+  outline: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+
+  outline: none;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: "October Crow";
+  background: rgb(12, 12, 12);
+  overflow: hidden;
+
+
+}
+
+body::before,
+body::after {
+  content: '';
+  min-width: 800px;
+  min-height: 800px;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(50% 50% at 50% 50%, #FFA900 0%, rgba(44, 44, 44, 0) 100%);
+  position: absolute;
+  opacity: 0.2;
+  filter: blur(100px);
+  z-index: -1;
+}
+
+body::before {
+  bottom: -50%;
+  left: -30%;
+
+}
+
+
+body::after {
+  top: -50%;
+  right: -30%;
+  transform: rotateZ(20deg);
+
+}
+
+/* #UTILS */
+.title {
+  text-align: center;
+  color: var(--yellow-light-color);
+  text-shadow: 0px 0px 8px #FF5B00;
+}
+
+/*##VARIAVEIS*/
+:root {
+  --yellow-orange-color: #EE9430;
+  --yellow-light-color: #ECC839;
+  --wine-color: #2B0E11;
+  --dark-color: #15181F;
+
 }

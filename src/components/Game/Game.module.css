@@ -1,0 +1,81 @@
+.container_background {
+    padding: 50px 160px;
+    background-image: url("/assets/img/wallpaper.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    z-index: -2;
+}
+
+.container_game {
+    padding: 50px 160px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+
+}
+
+.title_game {
+    font-size: 70px;
+}
+
+.select_container {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    z-index: 5;
+}
+
+.select_container select {
+    background-color: var(--wine-color);
+    color: var(--yellow-orange-color);
+    padding: 13px 140px 13px 10px;
+    font-size: 16px;
+    border: 1px solid var(--yellow-orange-color);
+    border-radius: 8px;
+    z-index: 5;
+
+}
+
+.select_container select:focus {
+    outline: none;
+}
+
+
+@media(max-width:1380px) {
+    .container_game {
+        padding: 50px 80px;
+    }
+
+
+}
+
+@media(max-width:1000px) {
+    .container_game {
+        padding: 50px 5px;
+    }
+
+
+}
+
+@media(max-width:700px) {
+    .container_game {
+        padding: 50px 20px;
+    }
+
+
+}
+
+@media(max-width:485px) {
+    .container_game {
+        padding: 20px 20px;
+    }
+
+
+
+
+}

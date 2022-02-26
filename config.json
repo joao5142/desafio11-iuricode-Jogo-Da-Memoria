@@ -1,0 +1,39 @@
+{
+    "cards": [{
+            "src": "/assets/img/card_image1.svg",
+
+            "fill": true
+
+        }, {
+            "src": "/assets/img/card_image2.svg",
+
+            "fill": false
+        }, {
+            "src": "/assets/img/card_image3.svg",
+
+            "fill": true
+        }, {
+            "src": "/assets/img/card_image4.svg",
+
+            "fill": true
+        }, {
+            "src": "/assets/img/card_image5.svg",
+
+            "fill": true
+        }, {
+            "src": "/assets/img/card_image6.svg",
+
+            "fill": true
+        }, {
+            "src": "/assets/img/card_image7.svg",
+
+            "fill": true
+        },
+        {
+            "src": "/assets/img/card_image8.svg",
+
+            "fill": true
+        }
+
+    ]
+}
