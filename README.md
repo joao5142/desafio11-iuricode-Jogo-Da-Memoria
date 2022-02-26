@@ -9,4 +9,4 @@
 <h2>Preview</h2>
 <img margin-bottom="20px" src="public/assets/img/Readme2.PNG"">
 <img margin-bottom="20px" src="public/assets/img/Readme.PNG"">
-<h4  style="display: inline_block">Visualização do site :</h4><a style="display: inline_block" target="blank" href="https://lokilandingpage.netlify.app/">Preview no Netlify</a>
+<h4  style="display: inline_block">Visualização do site :</h4><a style="display: inline_block" target="blank" href="https://desafio11-iuricode-jogo-da-mem-ria-ialvihski-joao5142.vercel.app/">Preview no Vercel</a>
