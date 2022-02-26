@@ -1,11 +1,14 @@
 .container_background {
+
     padding: 50px 160px;
     background-image: url("/assets/img/wallpaper.svg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: -webkit-max-device;
+    min-height: 100vh;
     position: absolute;
     top: 0px;
     z-index: -2;
@@ -13,8 +16,8 @@
 
 .container_game {
     padding: 50px 160px;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     z-index: 5;
 
 }

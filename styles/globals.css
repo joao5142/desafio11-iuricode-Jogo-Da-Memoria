@@ -13,8 +13,6 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-
-
 }
 
 ul,
@@ -40,14 +38,19 @@ textarea {
 button:focus,
 input:focus,
 textarea:focus {
-
   outline: none;
 }
 
 body,
+div#__next {
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
+}
+
 html {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: -webkit-fill-available;
 }
 
 body {
@@ -56,17 +59,16 @@ body {
   overflow: hidden;
 
 
+
 }
 
 body::before,
 body::after {
-  content: '';
+  content: "";
+  position: fixed;
   min-width: 800px;
   min-height: 800px;
-  width: 800px;
-  height: 800px;
   background: radial-gradient(50% 50% at 50% 50%, #FFA900 0%, rgba(44, 44, 44, 0) 100%);
-  position: absolute;
   opacity: 0.2;
   filter: blur(100px);
   z-index: -1;
@@ -99,5 +101,7 @@ body::after {
   --yellow-light-color: #ECC839;
   --wine-color: #2B0E11;
   --dark-color: #15181F;
+  --vh: 100%;
+
 
 }
